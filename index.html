@@ -79,6 +79,24 @@
             margin-bottom: 8px;
         }
 
+        /* Estilo para tornar o vídeo do YouTube responsivo */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            border-radius: 6px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
         footer {
             background-color: #0a9396;
             color: white;
@@ -101,6 +119,14 @@
         <section id="sobre">
             <h2>Sobre a Planta</h2>
             <p>O <strong>girassol</strong> (<em>Helianthus annuus</em>) é uma planta famosa por sua beleza vibrante e por uma característica única: o heliotropismo. Isso significa que, enquanto estão crescendo, os botões florais e as folhas jovens mudam de posição ao longo do dia para seguir o caminho do sol, do leste para o oeste.</p>
+        </section>
+
+        <section id="video">
+            <h2>Veja em Vídeo</h2>
+            <p>Assista abaixo a mais conteúdos e curiosidades sobre esta planta incrível:</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/uE5w3IoSOw8?si=-9qd_t2HrV1Sawm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </section>
 
         <section id="curiosidades">
